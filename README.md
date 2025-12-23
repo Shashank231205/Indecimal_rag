@@ -1,4 +1,4 @@
-# Mini RAG – Construction Marketplace Assistant (Technical Focus)
+# Construction Marketplace Assistant 
 
 ## Overview
 This project implements a **Retrieval-Augmented Generation (RAG)** pipeline for a construction marketplace AI assistant.  
