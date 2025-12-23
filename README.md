@@ -52,6 +52,31 @@ The focus of this implementation is **groundedness, determinism, and explainabil
 Integrated project management, daily tracking, and instant deviation flagging are used to manage construction delays.
 
 ---
+## Environment Configuration
+
+This project uses a `.env` file for configurable runtime parameters such as:
+- Embedding model selection
+- LLM model selection
+- Retrieval depth (TOP_K)
+- Generation limits
+- Strict grounding mode
+
+The `.env` file is intentionally excluded from version control.
+
+### Example `.env` (template only)
+
+Create a `.env` file in the project root with the following structure:
+
+```env
+EMBEDDING_MODEL=all-MiniLM-L6-v2
+LLM_MODEL=google/flan-t5-base
+TOP_K=3
+MAX_NEW_TOKENS=150
+STRICT_GROUNDING=true
+
+## I've still included .env to make it simpler, but in production i would never do it .(it is the biggest mistake an ml engineer would commit)
+
+
 
 ## How to Run
 ```bash
