@@ -1,0 +1,21 @@
+ingestion:
+  data_dir: data/raw
+  file_types: ["md"]
+
+chunking:
+  chunk_size: 400
+  overlap: 50
+  min_chunk_words: 80
+
+embeddings:
+  normalize: true
+
+vector_store:
+  index_path: cache/faiss.index
+  metadata_path: cache/chunks.pkl
+
+retrieval:
+  top_k: 3
+
+generation:
+  temperature: 0.0
